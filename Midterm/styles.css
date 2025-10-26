@@ -1,0 +1,53 @@
+/* ====== Base styles ====== */
+body {
+  background-color: #ffe6f2; /* light pastel pink */
+  color: #222; /* keep text readable */
+  font-family: Arial, sans-serif;
+}
+
+/* ====== Layout & variables ====== */
+
+/* Wrapper: liquid, centered, not full width */
+#wrapper {
+  width: var(--max-width); /* % value */
+  margin: 2% auto; /* centers with % */
+  background: var(--card);
+  padding: 1.25em; /* using ems for spacing */
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.4em rgba(0,0,0,0.06);
+}
+
+/* Header */
+header h1 {
+  margin: 0 0 0.2em 0;
+  font-size: 2em; /* em units */
+  color: var(--accent);
+}
+
+.tagline {
+  margin: 0 0 0.75em 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* Navigation (unordered list as required) */
+nav { margin-bottom: 1em; }
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5em 0;
+  display: flex;
+  gap: 1em;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.4em 0.6em;
+  border-radius: 0.25em;
+  font-size: 0.95em;
+  display: inline-block;
+}
+
+.main-nav a:hover {
+  background:
