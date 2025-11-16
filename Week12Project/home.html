@@ -1,0 +1,41 @@
+</head>
+
+<body>
+
+    <h3>Contact Our Team</h3>
+
+    <p>Please complete the form below and we’ll get back to you as soon as possible.</p>
+
+    <form action="https://webdevbasics.net/scripts/demo.php" method="POST">
+
+        <!-- Full Name -->
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <!-- Email -->
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone">
+
+        <!-- Topic Dropdown -->
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic">
+            <option value="general">General Inquiry</option>
+            <option value="support">Support</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <!-- Message Area -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Send Message">
+
+    </form>
+
+</body>
+</html>
