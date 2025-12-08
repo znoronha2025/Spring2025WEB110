@@ -1,0 +1,165 @@
+*/
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Site wrapper (centered, liquid but not full width) */
+#wrapper {
+  width: 90%;            /* liquid layout in % */
+  max-width: 1000px;     /* keeps it readable on wide screens */
+  margin: 1.5em auto;    /* centers wrapper */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 1em;        /* base font size */
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+  padding: 0.8em;        /* slightly padded area */
+}
+
+/* Top and bottom navigation: horizontal list style */
+.top-nav ul,
+.bottom-nav ul {
+  list-style: none;
+  display: flex;         /* horizontal nav */
+  gap: 0.6em;
+  justify-content: center;
+  padding: 0.4em 0;
+  background-color: #f1f1f1;
+  border-radius: 0.3em;
+}
+
+/* Nav links */
+.top-nav a,
+.bottom-nav a {
+  text-decoration: none;
+  padding: 0.4em 0.8em;
+  display: inline-block;
+  font-size: 1em;        /* em units for text */
+  border-radius: 0.2em;
+}
+
+/* Hover state */
+.top-nav a:hover,
+.bottom-nav a:hover {
+  background: #e0e0e0;
+}
+
+/* Header hero */
+.hero {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.hero h1 {
+  font-size: 2em;  /* 2em */
+  margin-bottom: 0.2em;
+}
+
+.tagline {
+  font-size: 1em;
+  margin-bottom: 0.8em;
+}
+
+/* Images: flexible */
+.hero-img,
+.content-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.6em 0;
+  border-radius: 0.25em;
+}
+
+/* Main content sections */
+main section {
+  margin: 1em 0;
+  padding: 0.6em;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 1.1em;
+  margin-top: 0.6em;
+  margin-bottom: 0.8em;
+}
+
+/* Form elements */
+form label {
+  display: block;
+  margin: 0.5em 0 0.2em 0;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  font-size: 1em;
+  padding: 6px; /* px < 10 allowed for small spacing */
+  margin-bottom: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  font-size: 1em;
+  padding: 6px 12px; /* small px values */
+  margin-right: 0.5em;
+  border: none;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+/* Simple color scheme (professional & readable) */
+body {
+  background: #f9fbfc;
+}
+
+/* Footer copyright text */
+footer p {
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 0.6em;
+}
+
+/* Small devices (mobile) — default styles above treat as mobile-first */
+
+/* Tablet media query */
+@media (min-width: 700px) {
+  #wrapper {
+    width: 85%;
+    padding: 1em;
+  }
+
+  .hero h1 {
+    font-size: 2.4em;
+  }
+
+  /* make nav items spaced more */
+  .top-nav ul,
+  .bottom-nav ul {
+    gap: 1em;
+  }
+}
+
+/* Desktop media query */
+@media (min-width: 1000px) {
+  #wrapper {
+    width: 70%;
+  }
+
+  main {
+    display: block;
+  }
+
+  .hero {
+    margin-top: 1.5em;
+  }
+}
