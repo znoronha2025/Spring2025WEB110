@@ -163,3 +163,10 @@ footer p {
     margin-top: 1.5em;
   }
 }
+
+/* Comments in CSS:
+   - Use .top-nav and .bottom-nav for the two horizontal menus.
+   - #wrapper is the main centered container. Widths are in % for a liquid layout.
+   - Font sizes use em units so they scale with user settings.
+   - Small paddings use px but kept < 10px to follow requirements.
+*/
